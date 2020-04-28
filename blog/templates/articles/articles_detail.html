@@ -24,6 +24,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           {{ article.text }}
+          <div class="clearfix mt-2">
+            <a class="btn btn-danger float-right" href="{% url 'delete_article' pk=article.id %}">Delete</a>
+            <a class="btn btn-light float-right mr-3" href="{% url 'update_article' pk=article.id %}">Update</a>
+          </div>
         </div>
       </div>
     </div>

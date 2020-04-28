@@ -29,7 +29,7 @@ class ArticleCreateView(CreateView):
     form_class = ArticleModelForm
     model = Article
     template_name = 'articles/articles_create.html'
-    success_url = '/'
+    success_url = '/articles/'
 
 
 class ArticleUpdateView(UpdateView):
@@ -37,11 +37,11 @@ class ArticleUpdateView(UpdateView):
     form_class = ArticleModelForm
     model = Article
     template_name = 'articles/articles_update.html'
-    success_url = '/'
+    success_url = '/articles/'
 
 
 class ArticleDeleteView(DeleteView):
     """ Article delete view """
     model = Article
     template_name = 'articles/articles_delete.html'
-    success_url = '/'
+    success_url = '/articles/'

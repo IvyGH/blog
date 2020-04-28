@@ -9,6 +9,6 @@ class ArticleModelForm(forms.ModelForm):
         fields = ['title', 'text', 'author']
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'text': forms.Textarea(),
+            'text': forms.Textarea(attrs={'class': 'form-control'}),
             'author': forms.TextInput(attrs={'class': 'form-control'}),
         }
